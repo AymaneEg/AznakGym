@@ -1,0 +1,79 @@
+.WelcomeToAznak{
+    width: 100%;
+    height: 70vh;
+    background-color: #1d1d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.WelcomeText , .WelcomeImage{
+    width:38%;
+    margin: 20px;
+    height: 50vh;
+    padding: 3%;
+} 
+
+.WelcomeText div ul li:nth-child(1)  {
+    list-style-type: none;
+    color: rgb(243, 243, 10);
+    font-size: 1.5rem;
+} 
+
+.WelcomeText div ul li:nth-child(2)  {
+    list-style-type: none;
+    color: #efeff1;
+    font-size: 2.5rem;
+    
+} 
+
+.WelcomeTextDiv::after {
+   content: " ";
+   width: 8%;
+   height: .5vh;
+   margin-top: 15px;
+   border-radius: 2px;
+   background-color: rgb(243, 243, 10);
+   position: absolute;
+}
+.Paraghrapghs{
+    margin-top: 40px;
+    color: #efeff1;
+    font-size: 1.1rem;
+    line-height: 25px;
+}
+.Paraghrapghs p {
+ margin-top: 10px;
+} 
+.Paraghrapghs p.ActiveP {
+color: rgb(226, 226, 14);
+}
+.Paraghrapghs:nth-child(1){
+    color: rgb(243, 243, 10);
+}
+.WelcomeImage .Image{
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+
+}
+
+.ImageSlide{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.Images{
+    background-size: cover;
+    background-position: center;
+    width: 32%;
+    height: 100px;
+    cursor: pointer;
+    transition: .5s;
+} 
+
+.Images:hover
+{
+   transform: scale(.9) ; 
+   border: 3px rgb(243, 243, 10) solid;
+}
