@@ -1,0 +1,50 @@
+.OffersContainer
+{
+    width: 100%;
+    background-color: #1D1D1D;
+}
+
+.OfferSection{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+
+}
+.OfferSection  > div {
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 8%;
+}
+
+.OfferDescription div:nth-child(1){
+    color: #efeff1;
+    line-height: 30px;
+}
+
+.OfferDescription div:nth-child(1) p {
+    color: yellow;
+} 
+
+.OfferDescription div:nth-child(1)::after{
+    content: " ";
+    width: 7%;
+    height: 4px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: yellow;
+    position: absolute;
+}
+
+.OfferDescription div:nth-child(2){
+   margin: 30px 10px;
+   color: #efeff1;
+}
+
+.OfferDescription div:nth-child(2) ul li{
+   display: flex;
+    list-style-type: none;
+    align-items: center;
+}

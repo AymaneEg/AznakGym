@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    scroll-behavior: smooth;
 }
 
 .WelcomeText , .WelcomeImage{
@@ -28,13 +29,18 @@
 } 
 
 .WelcomeTextDiv::after {
-   content: " ";
-   width: 8%;
-   height: .5vh;
-   margin-top: 15px;
-   border-radius: 2px;
-   background-color: rgb(243, 243, 10);
-   position: absolute;
+    content: " ";
+    width: 0%;
+    transition: .5s;
+    height: .5vh;
+    margin-top: 15px;
+    border-radius: 2px;
+    background-color: rgb(243, 243, 10);
+    position: absolute;
+}
+
+.WelcomeTextDiv.active::after {
+    width: 8%;
 }
 .Paraghrapghs{
     margin-top: 40px;
@@ -76,4 +82,82 @@ color: rgb(226, 226, 14);
 {
    transform: scale(.9) ; 
    border: 3px rgb(243, 243, 10) solid;
+} 
+
+
+.MemberShip {
+   width: 100%;
+   height: 70vh;
+   background-color: #28282B;
+
+}
+
+.MembreTitle{
+    text-align: center;
+    height: 10vh;
+    padding-top: 30px;
+    color: #efeff1;
+}
+
+.MembreTitle p{
+    color: rgb(226, 226, 14);
+}
+.Cards{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.Cards > div{
+    width: 18%;
+    height: 70%;
+    border: 3px solid #515153;
+    margin: 0 20px;
+    transition: .5s;
+    
+}
+
+.Cards > div:hover{
+    border: 1px solid rgb(226, 226, 14); 
+    border-radius: 10px;
+    transform : scale(1.1);
+}
+
+.Price{
+     width: 100%;
+     height: 30%;
+     text-align: center;
+     padding: 30px;
+     color: #efeff1;
+}
+.Time{
+  width: 100%;
+  height: 10% ;
+  background-color: #1d1d1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #efeff1;
+
+} 
+
+.Types{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.Types ul li {
+   list-style-type: none;
+   height: 5vh;   
+} 
+
+
+
+.Types ul {
+    margin-top: 10px;
+    color: #efeff1;
 }

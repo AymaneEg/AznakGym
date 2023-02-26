@@ -9,6 +9,7 @@
     background-size: cover;
     background-repeat: no-repeat; 
     padding-top: 16% ;
+    scroll-behavior: smooth;
 
 } 
                                                 
@@ -21,11 +22,12 @@ letter-spacing: 3px;
 }
 
 .HomePage h1 span {
-    color: rgb(243, 243, 10);
+    color: hsl(60, 92%, 50%);
 }
 
 .HomePage div {
 text-align: center; 
 width: 100%;
 
-}
+} 
+
